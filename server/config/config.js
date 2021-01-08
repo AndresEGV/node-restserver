@@ -18,7 +18,7 @@ let urlDB;
 //     urlDB = 'mongodb://localhost:27017/cafe';
 
 // } else {
-urlDB = 'mongodb+srv://strid:lE9I6hyrjA6AfsQB@cluster0.qvtyi.mongodb.net/cafe'
-    // }
+urlDB = process.env.MONGO_URI;
+// }
 
 process.env.URLDB = urlDB;
